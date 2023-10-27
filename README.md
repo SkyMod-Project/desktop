@@ -1,23 +1,21 @@
-# TurboWarp Desktop
+# SkyMod Desktop
 
-TurboWarp as a desktop app.
-
-If you're looking for downloads, head to: https://desktop.turbowarp.org/
+SkyMod as a desktop app.
 
 Licensed under the GPLv3.0. See LICENSE for more information.
 
 Parts of this repository are based on [LLK/scratch-desktop](https://github.com/LLK/scratch-desktop).
 
-## Website
+<!-- ## Website
 
-The website source code is in the `docs` folder.
+The website source code is in the `docs` folder. -->
 
 ## Development
 
 We use submodules, so clone using:
 
 ```bash
-git clone --recursive https://github.com/TurboWarp/desktop turbowarp-desktop
+git clone --recursive https://github.com/SkyMod-Project/desktop skymod-desktop
 ```
 
 or run this after cloning:
@@ -100,20 +98,18 @@ It is possible to give each packaged version of the app a unique *distribution I
 
 ## Advanced customizations
 
-TurboWarp Desktop lets you configure custom JS and CSS without rebuilding the app.
+SkyMod Desktop lets you configure custom JS and CSS without rebuilding the app.
 
-Find TurboWarp Desktop's data path by using the list below or by clicking "?" in the top right corner, then "Desktop Settings", then "Open User Data", then opening the highlighted folder, or refer to this list:
+Find SkyMod Desktop's data path by using the list below or by clicking "?" in the top right corner, then "Desktop Settings", then "Open User Data", then opening the highlighted folder, or refer to this list:
 
- - Windows (except Microsoft Store): `%APPDATA%/turbowarp-desktop`
- - Microsoft Store: Open `%LOCALAPPDATA%/Packages`, find the folder with the word `TurboWarpDesktop` in it, then open `LocalCache/Roaming/turbowarp-desktop`
- - macOS (except Mac App Store): `~/Library/Application Support/turbowarp-desktop`
- - Mac App Store: `~/Library/Containers/org.turbowarp.desktop/Data/Library/Application Support/turbowarp-desktop` (note that the `org.turbowarp.desktop` part may appear as `TurboWarp` in Finder)
- - Linux (except Flatpak and Snap): `~/.config/turbowarp-desktop`
- - Linux (Flatpak): `~/.var/app/org.turbowarp.TurboWarp/config/turbowarp-desktop`
- - Linux (Snap): `~/snap/turbowarp-desktop/current/.config/turbowarp-desktop`
+ - Windows: `%APPDATA%/skymod-desktop`
+ - macOS: `~/Library/Application Support/skymod-desktop`
+ - Linux<!-- (except Flatpak and Snap)-->: `~/.config/skymod-desktop`
+<!-- - Linux (Flatpak): `~/.var/app/org.turbowarp.TurboWarp/config/turbowarp-desktop`
+ - Linux (Snap): `~/snap/turbowarp-desktop/current/.config/turbowarp-desktop`-->
 
 Create the file `userscript.js` in this folder to configure custom JS. Create the file `userstyle.css` in this folder to configure custom CSS. Completely restart TurboWarp Desktop (including all windows) to apply.
 
-## Uninstall
+<!-- ## Uninstall
 
-See https://desktop.turbowarp.org/uninstall
+See https://desktop.turbowarp.org/uninstall -->
