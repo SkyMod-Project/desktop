@@ -1,12 +1,9 @@
 {
-  "name": "turbowarp-desktop",
+  "name": "skymod-desktop",
   "description": "Scratch mod with a compiler, dark mode, a bunch of addons, and more.",
   "version": "1.9.3",
   "license": "GPL-3.0",
-  "author": {
-    "email": "contact@turbowarp.org",
-    "name": "Thomas Weber"
-  },
+  "author": "CrossScar",
   "scripts": {
     "fetch": "node scripts/download-library-files.js && node scripts/download-packager.js && node scripts/prepare-extensions.js",
     "webpack:compile": "webpack",
@@ -36,25 +33,23 @@
     "postcss-import": "^14.0.0",
     "postcss-loader": "^4.2.0",
     "postcss-simple-vars": "^6.0.3",
-    "scratch-gui": "git+https://github.com/TurboWarp/scratch-gui.git#develop",
+    "scratch-gui": "git+https://github.com/SkyMod-Project/skymod-project.github.io.git",
     "style-loader": "^0.23.0",
     "url-loader": "^4.1.1",
     "webpack": "^4.47.0",
     "webpack-cli": "^4.10.0"
   },
-  "homepage": "https://desktop.turbowarp.org/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TurboWarp/desktop.git"
+    "url": "https://github.com/SkyMod-Project/desktop.git"
   },
   "bugs": {
-    "url": "https://github.com/TurboWarp/desktop/issues",
-    "email": "contact@turbowarp.org"
+    "url": "https://github.com/SkyMod-Project/desktop/issues"
   },
   "main": "./src-main/entrypoint.js",
   "build": {
-    "appId": "org.turbowarp.desktop",
-    "productName": "TurboWarp",
+    "appId": "io.github.skymod-project.desktop",
+    "productName": "SkyMod",
     "files": [
       "node_modules/**/*",
       "src-main/**/*",
@@ -86,9 +81,8 @@
     },
     "appx": {
       "artifactName": "${productName} MS Store ${version} ${arch}.${ext}",
-      "applicationId": "TurboWarp",
-      "displayName": "TurboWarp",
-      "identityName": "45747ThomasWeber.TurboWarpDesktop",
+      "applicationId": "SkyMod",
+      "displayName": "SkyMod",
       "publisher": "CN=18FA7D4F-01BF-49F2-BF56-782DCEA49C69",
       "publisherDisplayName": "Thomas Weber",
       "backgroundColor": "#4c97ff",
@@ -143,7 +137,7 @@
       "artifactName": "${productName}-${os}-${arch}-${version}.${ext}",
       "icon": "./build/",
       "synopsis": "Mod of Scratch with a compiler and more features.",
-      "description": "TurboWarp is a Scratch mod with a compiler to run projects faster, dark mode for your eyes, a bunch of addons to improve the editor, and more.",
+      "description": "SkyMod is a TurboWarp mod with a compiler to run projects faster, dark mode for your eyes, a bunch of addons to improve the editor, and more.",
       "category": "Development",
       "extraFiles": [
         "linux-files"
@@ -199,7 +193,7 @@
       {
         "provider": "github",
         "repo": "desktop",
-        "owner": "TurboWarp"
+        "owner": "SkyMod-Project"
       }
     ],
     "afterSign": "scripts/after-sign.js"
